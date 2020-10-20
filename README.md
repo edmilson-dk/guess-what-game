@@ -15,6 +15,10 @@ Este é um simples joguinho criado em ReactJS, que é baseado em uns jogos de ad
 * [ReactJS](https://reactjs.org/)
 * [Styled Comnponents](https://www.styled-components.com/)
 
+## Layout do game
+
+![GuessWhat](https://github.com/DKSecurity99/guess-what-game/blob/main/banner/guess-game.jpg)
+
 ## Como utilizar o game?
 
 É simples faça o seguinte:
