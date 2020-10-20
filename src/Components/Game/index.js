@@ -127,11 +127,13 @@ function Game() {
 
   useEffect(() => {
     if (hitCounter === 4) {
-     let  items = document.querySelectorAll('.elements');
+     /*let  items = document.querySelectorAll('.elements');
 
       items.forEach(item => {
         item.classList.remove('active');
       });
+    */
+      alert('Opa!! acertou todas,jogue outra partida :)');
     }
   }, [hitCounter]);
    
