@@ -8,7 +8,6 @@ import vuejsIcon from '../assets/icons/vuejs.svg';
 import reduxIcon from '../assets/icons/redux.svg';
 import html5Icon from '../assets/icons/html5.svg';
 
-let elementsCreated = [];
 const randomIcons = [
   jsIcon,
   tsIcon,
@@ -44,15 +43,16 @@ function duplicateELements(vector, element, count) {
 
 function useIcons() {
   let tmpVector = [];
+  let elementsCreated;
 
-  let newIconsRandom = generateVectorRandom(randomIcons);
+  let newIconsRandom = generateVectorRandom([...randomIcons]);
   newIconsRandom.splice(4, 5);
   
   newIconsRandom.forEach(icon => {
     duplicateELements(tmpVector, icon, 3);
   });
 
-  elementsCreated.push(...generateVectorRandom(tmpVector));
+  elementsCreated = [...generateVectorRandom(tmpVector)];
 
   return elementsCreated;
 }

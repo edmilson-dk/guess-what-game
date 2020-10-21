@@ -6,7 +6,7 @@ const BoxItem = styled.div`
   backface-visibility: hidden;
   overflow: hidden;
   position: absolute;
-  transition: all .5s linear;
+  transition: all .3s linear;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,9 +56,11 @@ export const BoxBack = styled(BoxItem)`
   padding: 0.2rem;
 
   ${({display}) => display ? css`
-    transform: perspective(30rem) rotateY(0deg);    
+    transform: perspective(30rem) rotateY(0deg);
+    pointer-events: none;
   ` : css`
     transform: perspective(30rem) rotateY(180deg);
+    pointer-events: auto;
   `};
 
   &.active {
